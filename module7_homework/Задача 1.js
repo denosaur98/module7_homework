@@ -1,13 +1,10 @@
-const obj = {a: 1, b: true, c: 'string'};
-let key = "..."
-function inObj(key, obj) {
-  if (key in obj) {
-    return true;
-  } else {
-    return false;
+const obj = {a: 1, b: true, c: 'str'};
+function func(obj) {
+for (let key in obj) {
+      console.log(`${key} - ${obj[key]}`);
   }
 }
-console.log(inObj(key, obj));
+func(obj);
 /*
-Функция, которая принимает в качестве аргументов строку и объект, а затем проверяет есть ли у переданного объекта свойство с данным именем. Функция возвращает true или false.
+Функция, которая принимает в качестве аргумента объект и выводит в консоль все ключи и значения только собственных свойств
 */
