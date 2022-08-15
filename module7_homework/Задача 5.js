@@ -8,9 +8,6 @@ class Things {
       }
     }
   }
-  Things.prototype.takePowerOn = function(Now, PowerOn) {
-      console.log(`${Now} - ${PowerOn}`)
-  }
   
   const notebook = new Things('HP', 'ON', `60 Вт`);
     notebook.Processor = 'Core I 9'
