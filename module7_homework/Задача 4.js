@@ -5,7 +5,7 @@ function Things(Name, Now, PowerOn) {
 }
 
 Things.prototype.takePowerOn = function(Now, PowerOn) {
-    console.log(`${Name}, ${Now} - ${PowerOn}`)
+    console.log(`${Now} - ${PowerOn}`)
 }
 
 const notebook = new Things('HP', 'ON', `60 Вт`);
